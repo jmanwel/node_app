@@ -2,8 +2,11 @@ const http = require('http');
 const port = 3000;
 const hostname = 'localhost';
 const fs = require("fs");
+const moment = require('moment');
 
+const christmas = "2024-12-25";
 
+console.log(moment(christmas).format("LL"));
 
 const server = http.createServer((req,res)=>{
     res.setHeader("Content-type", "text/html");
